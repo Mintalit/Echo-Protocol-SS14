@@ -233,7 +233,7 @@
   components:
   - type: LightBulb
     color: "#DAD6CF" # #PE-Tweak Было: FFE4CE -> Стало: DAD6CF
-    lightEnergy: 0.7 #PE-Tweak Было: 0.8 -> Стало: 0.5
+    lightEnergy: 0.7 #PE-Tweak Было: 0.8 -> Стало: 0.7
     lightRadius: 6 #PE-Tweak Было: 10 -> Стало: 6
     lightSoftness: 1
     PowerUse: 25
