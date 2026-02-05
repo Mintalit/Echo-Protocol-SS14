@@ -139,7 +139,7 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#FAF6DF" #PE-Tweak Было: EEEEFF -> Стало: FAF6DF
+    color: "#dff7fa" #PE-Tweak Было: EEEEFF -> Стало: dff7fa
     lightEnergy: 0.65 #PE-Tweak Было: 1 -> Стало: 0,65
     lightRadius: 8
     lightSoftness: 0.8 #PE-Tweak Было: 1 -> Стало: 0.8
@@ -233,7 +233,7 @@
   components:
   - type: LightBulb
     color: "#DAD6CF" # #PE-Tweak Было: FFE4CE -> Стало: DAD6CF
-    lightEnergy: 0.5 #PE-Tweak Было: 0.8 -> Стало: 0.5
+    lightEnergy: 0.7 #PE-Tweak Было: 0.8 -> Стало: 0.7
     lightRadius: 6 #PE-Tweak Было: 10 -> Стало: 6
     lightSoftness: 1
     PowerUse: 25
@@ -269,7 +269,7 @@
   components:
   - type: LightBulb
     color: "#FAF6DF" #PE-Tweak Было: EEEEFF -> Стало: FAF6DF
-    lightEnergy: 0.65 #PE-Tweak Было: 1 -> Стало: 0.65
+    lightEnergy: 0.75 #PE-Tweak Было: 1 -> Стало: 0.75
     lightRadius: 9 #PE-Tweak Было: 15 -> Стало: 9
     lightSoftness: 0.9
     BurningTemperature: 350
