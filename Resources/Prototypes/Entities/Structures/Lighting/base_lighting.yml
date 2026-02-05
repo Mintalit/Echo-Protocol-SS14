@@ -150,9 +150,9 @@
   - type: AmbientOnPowered
   - type: AmbientSound
     volume: -15
-    range: 2
+    range: 2.5 #PE-Tweak Было: 2 -> Стало: 2.5
     sound:
-      path: /Audio/Ambience/Objects/light_hum.ogg
+      path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
   - type: DamageOnInteract
     damage:
       types:
@@ -259,7 +259,7 @@
       volume: -15
       range: 2
       sound:
-        path: /Audio/Ambience/Objects/light_hum.ogg
+        path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
     - type: Sprite
       sprite: Structures/Wallmounts/Lighting/light_small.rsi
       state: base
