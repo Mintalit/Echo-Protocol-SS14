@@ -149,7 +149,7 @@
     hasLampOnSpawn: LightTube
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -12 #PE-Tweak Было: - -15 -> Стало: -12
+    volume: -12 #PE-Tweak Было: -15 -> Стало: -12
     range: 5 #PE-Tweak Было: 2 -> Стало: 5
     sound:
       path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
