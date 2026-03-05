@@ -4,7 +4,7 @@
         "x": 32,
         "y": 32
     },
-    "copyright": "shutguncase,shotguncase_door and shotguncase_open, taken from Tau Ceti at commit 9b974d6a0de50e09904c8c3fb7e96f5d05fdae90, modifyed by unlumy,locked and unlocked sprite taken from official codebase",
+    "copyright": "shutguncase,shotguncase_door and shotguncase_open, taken from Tau Ceti at commit 9b974d6a0de50e09904c8c3fb7e96f5d05fdae90, modifyed by unlumy. Welded, generic, generic_door, locked and unlocked sprite taken from official codebase",
     "license": "CC-BY-SA-3.0",
     "states": [
         {
@@ -21,6 +21,15 @@
         },
         {
             "name": "unlocked"
+        },
+        {
+            "name": "welded"
+        },
+        {
+            "name": "generic"
+        },
+        {
+            "name": "generic_door"
         }
     ]
 }
