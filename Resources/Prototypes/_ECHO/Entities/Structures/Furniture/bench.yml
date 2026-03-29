@@ -28,7 +28,7 @@
       color: "#5a3a7a"
   - type: Construction
     graph: Seat
-    node: orangeYellowComfBench
+    node: purpleComfBench
 
 - type: entity
   id: BenchDarkPurpleComfy
