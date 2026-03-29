@@ -111,6 +111,7 @@
 #Цветные удобные камейки
 - type: construction
   id: BenchOrangeYellowComfy
+  name: construction-recipe-orange-yellow-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: orangeYellowComfBench
@@ -123,6 +124,7 @@
 
 - type: construction
   id: BenchPurpleComfy
+  name: construction-recipe-purple-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: purpleComfBench
@@ -135,6 +137,7 @@
 
 - type: construction
   id: BenchDarkPurpleComfy
+  name: construction-recipe-dark-purple-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: darkPurpleComfBench
@@ -147,6 +150,7 @@
 
 - type: construction
   id: BenchGrayComfy
+  name: construction-recipe-gray-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: grayComfBench
@@ -159,6 +163,7 @@
 
 - type: construction
   id: BenchDarkGrayComfy
+  name: construction-recipe-dark-gray-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: darkGrayComfBench
@@ -171,6 +176,7 @@
 
 - type: construction
   id: BenchGreenComfy
+  name: construction-recipe-green-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: greenComfBench
@@ -183,6 +189,7 @@
 
 - type: construction
   id: BenchWhiteBlueComfy
+  name: construction-recipe-white-blue-comf-bench
   graph: EchoSeat
   startNode: start
   targetNode: whiteBlueComfBench
