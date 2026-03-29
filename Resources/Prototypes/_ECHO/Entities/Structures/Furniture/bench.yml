@@ -11,7 +11,7 @@
     - state: bench_solo_cover
       color: "#d89b2b"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: orangeYellowComfBench
 
 - type: entity
@@ -27,7 +27,7 @@
     - state: bench_solo_cover
       color: "#5a3a7a"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: purpleComfBench
 
 - type: entity
@@ -43,7 +43,7 @@
     - state: bench_solo_cover
       color: "#2e1b3a"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: darkPurpleComfBench
 
 - type: entity
@@ -59,7 +59,7 @@
     - state: bench_solo_cover
       color: "#9a9a9a"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: grayComfBench
 
 - type: entity
@@ -75,7 +75,7 @@
     - state: bench_solo_cover
       color: "#4a4a4a"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: darkGrayComfBench
 
 - type: entity
@@ -91,7 +91,7 @@
     - state: bench_solo_cover
       color: "#3f7a4a"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: greenComfBench
 
 - type: entity
@@ -107,5 +107,5 @@
     - state: bench_solo_cover
       color: "#cfe8f5"
   - type: Construction
-    graph: Seat
+    graph: EchoSeat
     node: whiteBlueComfBench
