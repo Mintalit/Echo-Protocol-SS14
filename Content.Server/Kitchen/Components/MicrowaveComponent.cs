@@ -5,6 +5,9 @@ using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared.Kitchen; // Pe-Tweak Добавлено using Content.Shared.Kitchen;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;  // Pe-Tweak добавлено using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom; 
+using Content.Shared.Kitchen.Components; // Pe-Tweak Добавлено using Content.Shared.Kitchen.Components;
 
 namespace Content.Server.Kitchen.Components
 {
@@ -13,7 +16,10 @@ namespace Content.Server.Kitchen.Components
     {
         [DataField("cookTimeMultiplier"), ViewVariables(VVAccess.ReadWrite)]
         public float CookTimeMultiplier = 1;
-
+        [ViewVariables(VVAccess.ReadOnly)]
+        public float FinalCookTimeMultiplier = 1.0f; // Pe-Tweak: machine parts
+        [DataField("cookTimeScalingConstant")]
+        public float CookTimeScalingConstant = 0.5f;
         [DataField("baseHeatMultiplier"), ViewVariables(VVAccess.ReadWrite)]
         public float BaseHeatMultiplier = 100;
 
@@ -110,5 +116,60 @@ namespace Content.Server.Kitchen.Components
         /// </summary>
         [DataField, ViewVariables(VVAccess.ReadWrite)]
         public bool CanMicrowaveIdsSafely = true;
+
+        // Pe-Tweak - recipe type Начало
+        /// <summary>
+        /// Типы рецептов, которые может приготовить эта "микроволновая печь".
+        /// </summary>
+        [DataField(customTypeSerializer: typeof(FlagSerializer<MicrowaveRecipeTypeFlags>)), ViewVariables(VVAccess.ReadWrite)]
+        public int ValidRecipeTypes = (int)MicrowaveRecipeType.Microwave;
+
+        /// <summary>
+        /// Если компонент = true, то события, отправляемые микроволновой печью, будут указывать на то, что объект нагревается.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        public bool CanHeat = true;
+
+        /// <summary>
+        /// Если компонент = true, то события, посылаемые микроволновой печью, будут указывать на то, что объект подвергается облучению.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        public bool CanIrradiate = true;
+
+        /// <summary>
+        /// Строка локализации, которая будет отображаться при вставке слишком большого обьекта.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        public string TooBigPopup = "microwave-component-interact-item-too-big";
+
+        /// <summary>
+        /// Звук, который воспроизводится, когда набор ингредиентов не соответствует рецепту сборки.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        public SoundSpecifier NoRecipeSound = new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg");
+
+        /// <summary>
+        /// Звук, который воспроизводится, когда набор ингредиентов не соответствует рецепту сборки.
+        /// </summary>
+        [DataField, ViewVariables(VVAccess.ReadOnly)]
+        public MicrowaveUiKey Key = MicrowaveUiKey.Key;
+        // Pe-Tweak - recipe type Конец
+    }
+    public sealed class BeingMicrowavedEvent : HandledEntityEventArgs
+    {
+        public EntityUid Microwave;
+        public EntityUid? User;
+        // // Pe-Tweak - поля, указывающие, подвергается ли объект фактическому нагреву или облучению.
+        public bool BeingHeated;
+        public bool BeingIrradiated;
+        // Pe-Tweak - Конец
+
+        public BeingMicrowavedEvent(EntityUid microwave, EntityUid? user, bool heating, bool irradiating) // Frontier: added heating, irradiating
+        {
+            Microwave = microwave;
+            User = user;
+            BeingHeated = heating;
+            BeingIrradiated = irradiating;
+        }
     }
 }

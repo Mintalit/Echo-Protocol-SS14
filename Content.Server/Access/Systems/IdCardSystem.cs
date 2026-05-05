@@ -13,6 +13,7 @@ using Content.Shared.Popups;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Server.Kitchen.EntitySystems;
+using BeingMicrowavedEvent = Content.Server.Kitchen.Components.BeingMicrowavedEvent;
 
 namespace Content.Server.Access.Systems;
 
@@ -42,7 +43,8 @@ public sealed class IdCardSystem : SharedIdCardSystem
             float randomPick = _random.NextFloat();
 
             // if really unlucky, burn card
-            if (randomPick <= 0.15f)
+            // Pe-Tweak было -   if (randomPick <= 0.15f), стало - if (args.BeingHeated && randomPick <= 0.15f)
+            if (args.BeingHeated && randomPick <= 0.15f) // Pe-Tweak: Если айди не нагрето, то оно не повреждается
             {
                 TryComp(uid, out TransformComponent? transformComponent);
                 if (transformComponent != null)
@@ -57,6 +59,15 @@ public sealed class IdCardSystem : SharedIdCardSystem
                 QueueDel(uid);
                 return;
             }
+
+
+            // Pe-Tweak Начало - ID доступ меняется только с радиацией
+            if (!args.BeingIrradiated)
+            {
+                return;
+            }
+            // Pe-Tweak Конец
+
 
             //Explode if the microwave can't handle it
             if (!micro.CanMicrowaveIdsSafely)
