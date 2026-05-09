@@ -30,6 +30,13 @@ reagent-desc-rice = Hard, small white grains.
 
 reagent-name-oil-olive = olive oil
 reagent-desc-oil-olive = Viscous and fragrant.
+ 
+# Added reagents from prototypes
+reagent-name-everyspice = everyspice
+reagent-desc-everyspice = A warm, peppery spice used in many recipes.
+
+reagent-name-raisins = raisins
+reagent-desc-raisins = Dried grapes; sweet and chewy.
 
 reagent-name-oil = oil
 reagent-desc-oil = Used by chefs to cook.

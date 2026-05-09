@@ -8,8 +8,10 @@
       state: service
     - type: MachineBoard
       prototype: KitchenElectricRange
-      requirements:
-        Capacitor: 3
+      componentRequirements:
+        Capacitor:
+          amount: 3
+          defaultPrototype: Capacitor
       stackRequirements:
         Steel: 5
         Glass: 2

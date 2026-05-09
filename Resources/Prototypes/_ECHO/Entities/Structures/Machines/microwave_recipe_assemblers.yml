@@ -15,7 +15,7 @@
     validRecipeTypes: Oven
     canHeat: true
     canIrradiate: false
-    key: ElectricRangeKey
+    key: enum.MicrowaveUiKey.Key
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -38,7 +38,7 @@
           Medium: { visible: true, state: range_medium }
           High: { visible: true, state: range_high }
   - type: ActivatableUI
-    key: enum.MicrowaveUiKey.ElectricRangeKey
+    key: enum.MicrowaveUiKey.Key
   - type: DeviceLinkSink
     ports:
     - On
@@ -49,7 +49,7 @@
     range: 200
   - type: UserInterface
     interfaces:
-      enum.MicrowaveUiKey.ElectricRangeKey:
+      enum.MicrowaveUiKey.Key:
         type: MicrowaveBoundUserInterface
   - type: Physics
     bodyType: Static
@@ -114,7 +114,7 @@
     - Chef
     - FoodRecipes
   - type: EntityHeater
-    passivePower: 1000 # Базовая мощность духовка
+    Power: 1000 # Базовая мощность духовка
   - type: PlaceableSurface
     isPlaceable: false # Предотвращает задержку предметов на несколько кадров при нажатии ими на духовку.
   - type: ItemPlacer

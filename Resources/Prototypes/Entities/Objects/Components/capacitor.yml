@@ -1,0 +1,13 @@
+- type: entity
+  id: Capacitor
+  parent: BaseItem
+  name: capacitor
+  description: a small electronic capacitor
+  components:
+    - type: Item
+      size: Small
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+    - type: PhysicalComposition
+      materialComposition:
+        Steel: 1

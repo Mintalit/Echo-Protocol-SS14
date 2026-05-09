@@ -462,7 +462,6 @@
   group: Breads
   reagents:
     Milk: 5
-  solids:
     FoodDough: 1
     FoodCheeseSlice: 2
   recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
