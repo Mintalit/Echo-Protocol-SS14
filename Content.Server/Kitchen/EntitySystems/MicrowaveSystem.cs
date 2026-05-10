@@ -640,6 +640,13 @@ namespace Content.Server.Kitchen.EntitySystems
                 return (recipe, 0);
             }
 
+            // Pe-Tweak: microwave recipe machine types
+            if ((recipe.RecipeType & component.ValidRecipeTypes) == 0)
+            {
+                return (recipe, 0);
+            }
+            // Pe-Tweak end
+
             foreach (var solid in recipe.IngredientsSolids)
             {
                 if (!solids.ContainsKey(solid.Key))
