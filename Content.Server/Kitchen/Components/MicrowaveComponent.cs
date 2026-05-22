@@ -87,6 +87,7 @@ namespace Content.Server.Kitchen.Components
 
         [DataField]
         public string ContainerId = "microwave_entity_container";
+        public string ContainerId = "microwave_entity_container";
 
         [DataField, ViewVariables(VVAccess.ReadWrite)]
         public int Capacity = 10;

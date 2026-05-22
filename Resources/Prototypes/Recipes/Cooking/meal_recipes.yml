@@ -6,7 +6,8 @@
   group: Breads
   solids:
     FoodDoughSlice: 1 # one third of a standard bread dough recipe
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeCottonBun
@@ -16,7 +17,8 @@
   group: Moth
   solids:
     FoodDoughCottonSlice: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 #Bagels
 - type: microwaveMealRecipe
@@ -27,7 +29,8 @@
   group: Breads
   solids:
     FoodDoughRope: 1 # created by rolling a dough slice.
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBagelPoppy
@@ -38,7 +41,8 @@
   solids:
     FoodDoughRope: 1
     PoppySeeds: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBagelCotton
@@ -48,7 +52,8 @@
   group: Moth
   solids:
     FoodDoughCottonRope: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 #Burgers
 
@@ -61,7 +66,8 @@
   solids:
     FoodBreadBun: 1
     OrganHumanAppendix: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBaconBurger
@@ -73,7 +79,8 @@
     FoodBreadBun: 1
     FoodMeatBacon: 1
     FoodCheeseSlice: 2
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBaseballBurger
@@ -84,7 +91,8 @@
   solids:
     FoodBreadBun: 1
     BaseBallBat: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBearger
@@ -95,7 +103,8 @@
   solids:
     FoodBreadBun: 1
     FoodMeatBear: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeBigBiteBurger
@@ -109,7 +118,8 @@
     FoodCheeseSlice: 1
     FoodTomato: 1
     FoodOnionSlice: 2
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe #Added to metamorph recipes
   id: RecipeBrainBurger
@@ -120,7 +130,8 @@
   solids:
     FoodBreadBun: 1
     OrganHumanBrain: 1
-  recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
+  recipeType:
+  - Oven # PE-Tweak добавлено (recipeType: Oven)
 
 - type: microwaveMealRecipe
   id: RecipeCatBurger
