@@ -100,7 +100,7 @@
   - type: ApcPowerReceiver
     powerLoad: 1000 # Предположим конфорка выключена
   - type: Machine
-    board: ElectricRangeMachineCircuitboard
+    board: ElectricRangeMachineCircuitBoard
   - type: ContainerContainer
     containers:
       microwave_entity_container: !type:Container
@@ -114,7 +114,7 @@
     - Chef
     - FoodRecipes
   - type: EntityHeater
-    Power: 1000 # Базовая мощность духовка
+    power: 1000 # Базовая мощность духовка
   - type: PlaceableSurface
     isPlaceable: false # Предотвращает задержку предметов на несколько кадров при нажатии ими на духовку.
   - type: ItemPlacer

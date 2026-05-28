@@ -473,6 +473,7 @@
   group: Breads
   reagents:
     Milk: 5
+  solids:
     FoodDough: 1
     FoodCheeseSlice: 2
   recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
@@ -689,7 +690,7 @@
   time: 15
   group: Savory
   solids:
-    FoodOnionRingsBattered: 1 # PE-Tweak Было: FoodOnionSlice -> FoodOnionRingsBattered
+    FoodOnionSlice: 1
   recipeType: Oven # PE-Tweak добавлено (recipeType: Oven)
 
 #Pizzas TODO: contruction graph based pizza
@@ -1620,7 +1621,6 @@
   id: RecipeCookie
   name: cookie recipe
   result: FoodBakedCookie
-  resultCount: 3 
   time: 10 # PE-Tweak Было: time: 5 -> Стало:   resultCount: 3 time: 10 
   group: BarsAndCookies
   reagents:
@@ -1635,7 +1635,6 @@
   id: RecipeSugarCookie
   name: sugar cookie recipe
   result: FoodBakedCookieSugar
-  resultCount: 2 
   time: 10 # PE-Tweak Было: time: 5 -> Стало:   resultCount: 2 time: 10 
   group: BarsAndCookies
   reagents:
@@ -1649,7 +1648,6 @@
   id: RecipeRaisinCookie
   name: raisin cookie recipe
   result: FoodBakedCookieRaisin
-  resultCount: 2 
   time: 10 # PE-Tweak Было: time: 5 -> Стало:   resultCount: 2 time: 10 
   group: BarsAndCookies
   reagents:
@@ -1662,7 +1660,6 @@
   id: RecipeCookieOatmeal
   name: oatmeal cookie recipe
   result: FoodBakedCookieOatmeal
-  resultCount: 2
   time: 10 # PE-Tweak Было: time: 5 -> Стало:   resultCount: 2 time: 10 
   group: BarsAndCookies
   reagents:

@@ -1,7 +1,7 @@
 - type: latheRecipe
-  id: ElectricRangeMachineCircuitboard
+  id: ElectricRangeMachineCircuitBoard
   parent: [BaseCircuitboardRecipe, BaseServiceMachineRecipeCategory]
-  result: ElectricRangeMachineCircuitboard
+  result: ElectricRangeMachineCircuitBoard
   materials:
     Steel: 800
     Glass: 900
