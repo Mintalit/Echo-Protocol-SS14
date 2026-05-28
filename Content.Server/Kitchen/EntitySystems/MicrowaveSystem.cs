@@ -40,7 +40,7 @@ using Content.Shared.Damage.Components;
 using Content.Shared.Power.EntitySystems;
 using Content.Shared.Temperature.Components;
 using Content.Shared.Construction.Components;
-using BeingMicrowavedEvent = Content.Server.Kitchen.Components.BeingMicrowavedEvent; // Pe-Tweak добавлено using Content.Shared.Construction.Components
+using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent;
 
 namespace Content.Server.Kitchen.EntitySystems
 {
