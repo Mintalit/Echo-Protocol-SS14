@@ -33,6 +33,7 @@
           True: { visible: true }
           False: { visible: false }
       enum.EntityHeaterVisuals.Setting:
+        enum.EntityHeaterVisuals.Setting:
           Off: { visible: false }
           Low: { visible: true, state: "range_low" }
           Medium: { visible: true, state: "range_medium" }
