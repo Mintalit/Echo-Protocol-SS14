@@ -186,15 +186,6 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
             else
                 AppendMachineTexture("/Textures/Structures/Machines/microwave.rsi", "mw");
             processingTypes.Add(Loc.GetString("guidebook-food-processing-type-microwave"));
-        }
-        if (recipeType.HasFlag(MicrowaveRecipeType.Oven))
-        {
-            if (recipe.SecretRecipe)
-                AppendMachineTexture("/Textures/_ECHO/Structures/Machines/oven_syndie.rsi", "composite_off");
-            else
-                AppendMachineTexture("/Textures/_ECHO/Structures/Machines/oven.rsi", "composite_off");
-            processingTypes.Add(Loc.GetString("guidebook-food-processing-type-oven"));
-        }
         var processingTypeString = string.Join('/', processingTypes);
         var msg_machine = new FormattedMessage();
         var msg_time = new FormattedMessage();
