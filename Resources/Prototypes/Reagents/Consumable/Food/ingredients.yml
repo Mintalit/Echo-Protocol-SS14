@@ -83,6 +83,7 @@
       metabolites:
         Protein: 2
 
+# Pe-Tweak - Начало
 - type: reagent
   id: Everyspice
   name: reagent-name-everyspice
@@ -111,6 +112,7 @@
       metabolites:
         Sugar: 0.8
         Nutriment: 0.2
+# Pe-Tweak - Конец
 
 - type: reagent
   id: Blackpepper

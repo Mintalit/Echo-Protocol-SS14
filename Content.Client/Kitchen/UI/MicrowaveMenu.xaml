@@ -92,7 +92,7 @@
                 </PanelContainer>
             </BoxContainer>
         </BoxContainer>
-        <!-- Footer -->
+         <!-- Footer -->
         <BoxContainer Orientation="Vertical">
             <PanelContainer StyleClasses="LowDivider" />
             <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">

@@ -8,12 +8,12 @@ using Content.Shared.Access.Systems;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Kitchen;
-using Content.Shared.Kitchen.Components;
+using Content.Shared.Kitchen.Components; // Pe-Tweak - добавлено using Content.Shared.Kitchen.Components;
 using Content.Shared.Popups;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Server.Kitchen.EntitySystems;
-using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent;
+using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent; // Pe-Tweak - добавлено using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent;
 
 namespace Content.Server.Access.Systems;
 

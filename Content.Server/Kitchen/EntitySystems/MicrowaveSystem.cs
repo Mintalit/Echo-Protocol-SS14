@@ -39,8 +39,8 @@ using Content.Shared.Chat;
 using Content.Shared.Damage.Components;
 using Content.Shared.Power.EntitySystems;
 using Content.Shared.Temperature.Components;
-using Content.Shared.Construction.Components;
-using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent;
+using Content.Shared.Construction.Components; // Pe-Tweak добавлено для OnConstructionTemp
+using BeingMicrowavedEvent = Content.Shared.Kitchen.BeingMicrowavedEvent; // Pe-Tweak добавлено для BeingMicrowavedEvent
 
 namespace Content.Server.Kitchen.EntitySystems
 {
