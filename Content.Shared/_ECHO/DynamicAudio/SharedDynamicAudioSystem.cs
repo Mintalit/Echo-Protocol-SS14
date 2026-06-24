@@ -60,15 +60,36 @@ public sealed class SharedDynamicAudioSystem : EntitySystem
         if (!_playerManager.LocalEntity.HasValue)
             return;
 
+        // Check if the audio entity still exists
+        if (!Exists(audio.Owner))
+            return;
+
         var preset = GetAreaPrototypePreset(audio, source);
 
         if (!_presets.TryGetValue(preset, out var audioAux) && !TryCreateAudioEffect(preset, out audioAux))
             return;
 
+        // Final check before applying the effect
+        if (!Exists(audio.Owner) || !Exists(audioAux))
+            return;
+
         if (_net.IsServer)
-            Timer.Spawn(TimeSpan.FromTicks(10L), () => _audio.SetAuxiliary(audio, audio, audioAux));
+        {
+            var audioOwner = audio.Owner;
+            var audioComp = audio.Comp;
+            Timer.Spawn(TimeSpan.FromTicks(10L), () =>
+            {
+                // Verify entities still exist before applying effect
+                if (Exists(audioOwner) && Exists(audioAux))
+                {
+                    _audio.SetAuxiliary((audioOwner, audioComp), (audioOwner, audioComp), audioAux);
+                }
+            });
+        }
         else
+        {
             _audio.SetAuxiliary(audio, audio, audioAux);
+        }
     }
 
     /// <summary>
