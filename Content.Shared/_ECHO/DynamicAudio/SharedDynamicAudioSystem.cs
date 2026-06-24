@@ -72,6 +72,7 @@ public sealed class SharedDynamicAudioSystem : EntitySystem
         // Final check before applying the effect
         if (!Exists(audio.Owner) || !Exists(audioAux))
             return;
+
         if (_net.IsServer)
         {
             var audioOwner = audio.Owner;
@@ -83,14 +84,6 @@ public sealed class SharedDynamicAudioSystem : EntitySystem
                     _audio.SetAuxiliary(audio, audio, audioAux);
                 }
             });
-        }
-        else
-        {
-            _audio.SetAuxiliary(audio, audio, audioAux);
-        }
-        else
-        {
-            _audio.SetAuxiliary(audio, audio, audioAux);
         }
         else
         {
