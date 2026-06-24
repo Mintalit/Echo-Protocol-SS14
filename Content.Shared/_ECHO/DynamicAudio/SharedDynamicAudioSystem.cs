@@ -32,13 +32,10 @@ public sealed class SharedDynamicAudioSystem : EntitySystem
     };
 
     private string _defaultPreset = "LivingRoom";
-    private string _inSpacePreset = "InSpace";
     private string _onPlanetPreset = "Forest";
 
     private int _maxAreaScanRadius = 8; // prefer to set value of pvs divided by 2
     private int _maxTilesScanCount = 200;
-
-    private int _soundMuffleInSpace = -10;
 
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
